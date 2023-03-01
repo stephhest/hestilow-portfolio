@@ -5,6 +5,8 @@ export default function Contact() {
   const [name, setName] = React.useState("");
   const [email, setEmail] = React.useState("");
   const [message, setMessage] = React.useState("");
+  const [alert, setAlert] = React.useState("Nothing to see here");
+  const [submitted, setSubmitted] = React.useState(false);
 
   function encode(data) {
     return Object.keys(data)
@@ -16,14 +18,38 @@ export default function Contact() {
 
   function handleSubmit(e) {
     e.preventDefault();
-    fetch("/", {
+
+    setSubmitted(false);
+
+    const fetchConfig = {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({ "form-name": "contact", name, email, message }),
-    })
-      .then(() => alert("Message sent!"))
-      .catch((error) => alert(error));
+    }
+
+    fetch("/", fetchConfig)
+      .then((response) => {
+        if(!response.ok) {
+          console.log("Form submission error")
+          setAlert('There was an issue submitting your form. Please try again.')
+        } else {
+          console.log("Form success")
+          setName('');
+          setEmail('');
+          setMessage('');
+          setAlert('Your message was sent!');
+        }
+      })
+      .then(() => {
+        setSubmitted(true);
+      })
+      .catch((error) => console.error('Error caught', error));
   }
+
+  let display = "hidden";
+  if (submitted === true) {
+    display = "";
+  };
 
   return (
     <section id="contact" className="relative">
@@ -107,6 +133,17 @@ export default function Contact() {
             Submit
           </button>
         </form>
+        <div className={display}>
+          <div className="bg-blue-100 border border-blue-400 text-blue-900 mx-auto md:w-1/2 py-4 rounded relative" role="alert">
+            <span className="block text-center">{alert}</span>
+            {/* <span class="absolute top-0 bottom-0 right-0 px-4 py-3">
+              <svg class="fill-current h-6 w-6 text-blue-400" role="button" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                <title>Close</title>
+                <path d="M14.348 14.849a1.2 1.2 0 0 1-1.697 0L10 11.819l-2.651 3.029a1.2 1.2 0 1 1-1.697-1.697l2.758-3.15-2.759-3.152a1.2 1.2 0 1 1 1.697-1.697L10 8.183l2.651-3.031a1.2 1.2 0 1 1 1.697 1.697l-2.758 3.152 2.758 3.15a1.2 1.2 0 0 1 0 1.698z"/>
+              </svg>
+            </span> */}
+        </div>
+        </div>
         <footer className="text-center md:mt-32 mt-14">
         <p>&copy; Copyright 2023 Stephanie Hestilow</p>
         <p>All Rights Reserved</p>

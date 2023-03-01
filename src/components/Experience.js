@@ -38,7 +38,7 @@ export default function Experience() {
                     </div>
                   </div>
                   <p className="md:text-lg text-base text-white mt-4 mb-4">{role.description}</p>
-                  <ul role="list" className="list-none pl-5 space-y-3 text-white">
+                  <ul className="list-none pl-5 space-y-3 text-white">
                     {role.titles.map((title) => (
                       <li key={title} className="group flex">
                       <ChevronRightIcon className="text-blue-400 w-6 h-6 flex-shrink-0 mr-2" />
@@ -72,7 +72,7 @@ export default function Experience() {
                       </h2>
                     </div>
                   </div>
-                  <ul role="list" className="list-none pt-10 space-y-3 text-white">
+                  <ul className="list-none pt-10 space-y-3 text-white">
                       <li key={program.image} className="group flex">
                       <AcademicCapIcon className="text-blue-400 w-6 h-6 flex-shrink-0 mr-2" />
                       <p className="md:text-lg text-base text-white">

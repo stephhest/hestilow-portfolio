@@ -43,11 +43,11 @@ export default function About() {
           onClick={toggleIsShown}
           className="animate-fade-in bg-none md:text-3xl text-xl text-red-600 py-2 rounded-md mt-4 focus:outline-none border-none lg:absolute lg:z-10"
           >
-            {isShown ? "- hello!" : "+ about me"}
+            {isShown ? "hello!" : "+ about me"}
           </button>
           {isShown && (
             <p className="lg:text-xl text-lg text-gray-400 lg:mt-20 lg:absolute lg:z-10 lg:max-w-sm max-w-md">
-            I'm a full stack software engineer with a unique combination of programming and marketing expertise. <br/><br/> Fueled by my passion for bringing innovative digital experiences to life, I pivoted from a decade-long career in marketing & advertising to pursue software development, and have dedicated the past year building my technical skillset. <br/><br/>Switching gears from strategist to architect, I'm excited for the opportunity to play a role in building these online experiences firsthand.
+            I'm a full stack software engineer with a unique combination of programming and digital marketing expertise. <br/><br/> Fueled by my passion for bringing innovative online experiences to life, I pivoted from marketing & advertising to pursue a career in software development, switching gears from strategist to architect. <br/><br/>After dedicating the past year toward building my technical skillset, I'm excited for the opportunity to play a role in building these experiences firsthand.
           </p>
         )}
         <img
