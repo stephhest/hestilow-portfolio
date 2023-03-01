@@ -10,7 +10,7 @@ export default function About() {
 
   return (
     <section id="about">
-      <div className="container px-20 py-20 mx-auto bg-gray-100 rounded-t-3xl">
+      <div className="container md:px-20 md:py-20 px-8 py-8 mx-auto bg-gray-100 rounded-t-3xl">
         <div
           data-aos="fade-in"
           data-aos-offset={offset}

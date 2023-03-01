@@ -4,7 +4,7 @@ import { projects, offset } from "../data";
 export default function Projects() {
   return (
     <section id="projects">
-      <div className="container px-20 mx-auto bg-gray-100">
+      <div className="container md:px-20 px-4 mx-auto bg-gray-100">
         <div className="flex flex-col w-full mb-20">
         <div className="flex-grow border-solid border-4 border-white md:mt-28 md:mb-24 my-20">
         </div>

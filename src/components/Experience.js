@@ -5,7 +5,7 @@ import { roles, programs, offset } from "../data";
 export default function Experience() {
   return (
     <section id="experience">
-      <div className="container px-20 py-2 mx-auto bg-gray-100 relative">
+      <div className="container md:px-20 px-4 py-2 mx-auto bg-gray-100 relative">
         <div className="flex-grow border-solid border-4 border-white md:mt-28 md:mb-24 my-20">
         </div>
           <img

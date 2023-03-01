@@ -52,7 +52,7 @@ export default function Contact() {
 
   return (
     <section id="contact" className="relative">
-      <div className="container px-20 py-20 mx-auto bg-gray-100 rounded-b-3xl">
+      <div className="container md:px-20 md:py-20 px-8 py-8 mx-auto bg-gray-100 rounded-b-3xl">
         <div className="flex-grow border-solid border-4 border-white md:mt-28 md:mb-24 my-20">
         </div>
           <img
