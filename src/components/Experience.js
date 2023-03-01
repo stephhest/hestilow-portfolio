@@ -1,5 +1,5 @@
 import React from "react";
-import { ChevronRightIcon } from "@heroicons/react/solid";
+import { ChevronRightIcon, AcademicCapIcon } from "@heroicons/react/solid";
 import { roles, programs, offset } from "../data";
 
 export default function Experience() {
@@ -19,7 +19,7 @@ export default function Experience() {
           </h1>
           <div data-aos="fade-in" data-aos-offset={offset} className="flex flex-wrap mt-4">
             {roles.map((role) => (
-              <div className="lg:w-1/2 lg:mx-auto w-100 p-4">
+              <div key={role.image} className="lg:w-1/2 lg:mx-auto w-100 p-4">
                 <div className="h-full bg-gray-700 px-6 py-10 rounded-xl">
                 <div className="inline-flex items-center">
                   <div className="group flex"></div>
@@ -40,7 +40,7 @@ export default function Experience() {
                   <p className="md:text-lg text-base text-white mt-4 mb-4">{role.description}</p>
                   <ul role="list" className="list-none pl-5 space-y-3 text-white">
                     {role.titles.map((title) => (
-                      <li className="group flex">
+                      <li key={title} className="group flex">
                       <ChevronRightIcon className="text-blue-400 w-6 h-6 flex-shrink-0 mr-2" />
                       <p className="md:text-lg text-base text-white">
                         {title}
@@ -54,7 +54,7 @@ export default function Experience() {
           </div>
           <div data-aos="fade-in" data-aos-offset={offset} className="flex flex-wrap md:mt-8">
             {programs.map((program) => (
-              <div className="lg:w-1/3 lg:mx-auto w-100 p-4">
+              <div key={program.image} className="lg:w-1/3 lg:mx-auto w-100 p-4">
                 <div className="h-full bg-gray-700 px-6 py-10 rounded-xl">
                 <div className="inline-flex items-center">
                   <div className="group flex"></div>
@@ -73,8 +73,8 @@ export default function Experience() {
                     </div>
                   </div>
                   <ul role="list" className="list-none pt-10 space-y-3 text-white">
-                      <li className="group flex">
-                      <ChevronRightIcon className="text-blue-400 w-6 h-6 flex-shrink-0 mr-2" />
+                      <li key={program.image} className="group flex">
+                      <AcademicCapIcon className="text-blue-400 w-6 h-6 flex-shrink-0 mr-2" />
                       <p className="md:text-lg text-base text-white">
                         {program.degree}
                       </p>

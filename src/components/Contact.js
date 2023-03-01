@@ -59,7 +59,7 @@ export default function Contact() {
         </div>
         <form
           netlify
-          name="test"
+          name="contact"
           onSubmit={handleSubmit}
           data-aos="fade-in"
           data-aos-offset={offset}
