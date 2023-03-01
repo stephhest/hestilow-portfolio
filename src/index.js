@@ -13,7 +13,7 @@ ReactDOM.render(
   document.getElementById('root'),
   () => {
     AOS.init({
-      duration: 1100,
+      duration: 1000,
       easing: 'ease-in-out',
       once: false,
     });

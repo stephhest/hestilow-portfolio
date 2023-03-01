@@ -10,7 +10,7 @@ export default function About() {
 
   return (
     <section id="about">
-      <div className="container md:px-20 md:py-20 px-8 py-8 mx-auto bg-gray-100 rounded-t-3xl">
+      <div className="container md:px-20 md:py-20 px-4 py-8 mx-auto bg-gray-100 rounded-t-3xl">
         <div
           data-aos="fade-in"
           data-aos-offset={offset}
@@ -29,7 +29,7 @@ export default function About() {
             </div>
           ))}
         </div>
-        <h1 className="text-left md:text-8xl text-6xl font-bold text-gray-700 md:pt-20 md:pb-12 pb-6 pt-14 animate-fade-in-down">
+        <h1 className="text-left md:text-8xl text-6xl font-bold text-gray-700 md:pt-20 md:pb-12 pb-6 pt-24 animate-fade-in-down">
           stephanie <br /> hestilow
         </h1>
         <p className="md:text-3xl text-xl md:pb-4 pb-2 text-gray-400 animate-fade-in">
@@ -41,7 +41,7 @@ export default function About() {
         <div className="relative">
         <button
           onClick={toggleIsShown}
-          className="animate-fade-in bg-none md:text-3xl text-xl text-red-600 py-2 rounded-md mt-4 focus:outline-none border-none lg:absolute lg:z-10"
+          className="animate-fade-in bg-none md:text-3xl text-xl text-red-600 py-2 rounded-md mt-8 focus:outline-none border-none lg:absolute lg:z-10"
           >
             {isShown ? "hello!" : "+ about me"}
           </button>

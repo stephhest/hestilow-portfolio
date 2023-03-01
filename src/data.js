@@ -1,4 +1,4 @@
-export const offset = '500'
+export const offset = '300'
 
 export const projects = [
   {
