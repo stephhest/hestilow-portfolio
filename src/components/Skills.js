@@ -14,13 +14,13 @@ export default function Skills() {
             className="float-right right-0 bottom-0 md:w-80 w-40 z-10 opacity-40 animate-float-right-left"
           />
           <h1 data-aos="fade-in"
-          data-aos-offset={offset} className="text-center md:text-7xl text-5xl font-bold text-gray-700 md:pt-48 md:pb-16 pt-28 pb-8">
+          data-aos-offset={offset} className="text-center md:text-7xl text-5xl font-bold text-gray-700 md:pt-56 md:pb-16 pt-28 pb-8">
             skills &amp; tech
           </h1>
         <div data-aos="fade-in" data-aos-offset={offset} className="grid mx-auto md:grid-cols-3 grid-cols-2 md:max-w-5xl md:gap-4">
           {skills.map((skill) => (
             <div key={skill} className="p-1">
-              <div className="bg-gray-700 rounded-xl flex p-4 h-full items-center transition hover:scale-110 ease-in-out duration-200 transform-gpu hover:shadow-none">
+              <div className="bg-gray-600 rounded-xl flex p-4 h-full items-center transition hover:scale-110 ease-in-out duration-200 transform-gpu hover:shadow-none">
                 <BadgeCheckIcon className="text-blue-400 w-6 h-6 flex-shrink-0 mr-4" />
                 <span className="md:text-lg text-sm font-medium text-white">
                   {skill}

@@ -41,7 +41,7 @@ export const roles = [
 export const programs = [
   {
     description:
-      "Completed a 19-week software engineering immersive program with over 1000+ hours of coding and full stack development with JavaScript, Python, React, Django, FastAPI and RDBMS.",
+      "A 19-week software engineering immersive program with over 1000+ hours of coding and full stack development with JavaScript, Python, React, Django, FastAPI and RDBMS.",
     degree:"Certificate of Completion",
     image: "./hr.png",
     years: "2022 - 2023",
@@ -49,8 +49,8 @@ export const programs = [
   },
   {
     description:
-      "Completed the Tandon Bridge to Computer Science post-baccalaureate program, covering topics in Discrete Math, Programming in C++, Object Oriented Design, DS&A, and Introduction to Operating Systems.",
-    degree:"Certificate of Completion with Distinction",
+      "Post-baccalaureate program, covering topics in Discrete Math, Programming in C++, Object Oriented Design, DS&A, and Introduction to Operating Systems.",
+    degree:"Bridge to Computer Science Certificate of Completion (Distinction)",
     image: "./nyu.png",
     years: "2023 - 2023",
     institution: "New York University",

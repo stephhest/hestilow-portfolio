@@ -62,7 +62,7 @@ export default function Contact() {
           />
           <h1 data-aos="fade-in"
           data-aos-offset={offset}
-          className="text-center md:text-7xl text-5xl font-bold text-gray-700 md:pt-48 md:pb-16 pt-28 pb-8">
+          className="text-center md:text-7xl text-5xl font-bold text-gray-700 md:pt-56 md:pb-16 pt-28 pb-8">
             let's connect
           </h1>
         <div data-aos="fade-in" data-aos-offset={offset} className="grid mx-auto grid-cols-4 lg:w-80 w-64 gap-4">
