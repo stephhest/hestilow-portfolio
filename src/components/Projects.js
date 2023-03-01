@@ -6,7 +6,7 @@ export default function Projects() {
     <section id="projects">
       <div className="container md:px-20 px-4 mx-auto bg-gray-100">
         <div className="flex flex-col w-full mb-20">
-        <div className="flex-grow border-solid border-4 border-white md:mt-28 md:mb-24 my-20">
+        <div className="flex-grow border-solid border-4 border-white md:mt-48 md:mb-12 my-20">
         </div>
           <img
             src="./cloud.png"
