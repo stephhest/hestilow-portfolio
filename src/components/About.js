@@ -1,25 +1,65 @@
-import React from "react";
+import React, { useState } from "react";
+import { icons, offset } from "../data";
 
 export default function About() {
+  const [isShown, setIsShown] = useState(false);
+
+  const toggleIsShown = () => {
+    setIsShown(!isShown);
+  };
+
   return (
     <section id="about">
-      <div className="container mx-auto px-20 pt-20 items-center bg-gray-100">
-        <div className="vertical-align-top">
-          <h1 className="md:text-8xl text-5xl font-bold md:mb-8 mb-4 text-gray-800">
-            stephanie
-            <br/> hestilow
-          </h1>
-          <p className="md:text-3xl text-lg md:mb-4 mb-0 text-gray-400">
-            from digital marketer to
+      <div className="container px-20 py-20 mx-auto bg-gray-100 rounded-t-3xl">
+        <div
+          data-aos="fade-in"
+          data-aos-offset={offset}
+          className="md:float-right float-left grid mx-auto grid-cols-4 md:w-64 w-44 md:gap-4 gap-2"
+        >
+          {icons.map((icon) => (
+            <div key={icon.link}>
+              <a href={icon.link} key={icon.image}>
+                <img
+                  alt={icon.alt}
+                  className="rounded opacity-40 transition hover:-translate-y-4 ease-in-out duration-200 transform-gpu hover:shadow-none"
+                  src={icon.image}
+                  href={icon.link}
+                />
+              </a>
+            </div>
+          ))}
+        </div>
+        <h1 className="text-left md:text-8xl text-6xl font-bold text-gray-700 md:pt-20 md:pb-12 pb-6 pt-14 animate-fade-in-down">
+          stephanie <br /> hestilow
+        </h1>
+        <p className="md:text-3xl text-xl md:pb-4 pb-2 text-gray-400 animate-fade-in">
+          from digital marketer to
+        </p>
+        <p className="md:text-4xl text-2xl font-medium md:pb-8 text-red-600 animate-fade-in">
+          full stack <br /> software engineer
+        </p>
+        <div className="relative">
+        <button
+          onClick={toggleIsShown}
+          className="animate-fade-in bg-none md:text-3xl text-xl text-red-600 py-2 rounded-md mt-4 focus:outline-none border-none lg:absolute lg:z-10"
+          >
+            {isShown ? "- hello!" : "+ about me"}
+          </button>
+          {isShown && (
+            <p className="lg:text-xl text-lg text-gray-400 lg:mt-20 lg:absolute lg:z-10 lg:max-w-sm max-w-md">
+            I'm a full stack software engineer with a unique combination of programming and marketing expertise. <br/><br/> Fueled by my passion for bringing innovative digital experiences to life, I pivoted from a decade-long career in marketing & advertising to pursue software development, and have dedicated the past year building my technical skillset. <br/><br/>Switching gears from strategist to architect, I'm excited for the opportunity to play a role in building these online experiences firsthand.
           </p>
-          <p className="md:text-4xl text-xl font-medium text-red-600">
-            full stack <br/> software engineer
-          </p>
-          <img
-              className="md:float-right md:object-cover md:w-3/4 md:h-full md:max-w-3xl max-w-sm md:vertical-align-top pt-10 pl-20"
-              alt="hero"
-              src="./golden_gate.png"
-            />
+        )}
+        <img
+          src="./cloud.png"
+          alt="cloud"
+          className="absolute float-right top-90 lg:right-40 right-0 md:w-80 w-40 ml-14 opacity-40 animate-float-right-left"
+        />
+        <img
+          className="float-right lg:w-3/5 w-4/5 md:mt-14 pl-14 pt-14 animate-fade-in"
+          alt="hero"
+          src="./golden_gate.png"
+        />
         </div>
       </div>
     </section>
