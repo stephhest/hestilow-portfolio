@@ -41,7 +41,7 @@ export const roles = [
 export const programs = [
   {
     description:
-      "A 19-week software engineering immersive program with over 1000+ hours of coding and full stack development with JavaScript, Python, React, Django, FastAPI and RDBMS.",
+      "A 19-week full stack software engineering immersive program with over 1000+ hours of coding and development with JavaScript, Python, React, Django, FastAPI, HTML/CSS and PostgreSQL.",
     degree:"Certificate of Completion",
     image: "./hr.png",
     years: "2022 - 2023",
@@ -49,7 +49,7 @@ export const programs = [
   },
   {
     description:
-      "Post-baccalaureate program, covering topics in Discrete Math, Programming in C++, Object Oriented Design, DS&A, and Introduction to Operating Systems.",
+      "Post-baccalaureate program covering topics in Discrete Math, Programming in C++, Object Oriented Design, DS&A, and Introduction to Operating Systems.",
     degree:"Bridge to Computer Science Certificate of Completion (Distinction)",
     image: "./nyu.png",
     years: "2023 - 2023",
@@ -57,7 +57,7 @@ export const programs = [
   },
   {
     description:
-      "Received a Bachelor of Science from the Stan Richards School of Advertising with extended coursework through the Texas Media & Analytics program and Business Foundations program",
+      "Received a Bachelor of Science from the Stan Richards School of Advertising with extended coursework through the Texas Media & Analytics and Business Foundations programs.",
     degree:"B.S. Advertising",
     image: "./ut.png",
     years: "2009 - 2013",

@@ -99,6 +99,7 @@ export default function Contact() {
               name="name"
               value={name}
               className="w-full bg-white rounded border border-gray-300 focus:border-blue-300 focus:ring-2 focus:ring-blue-300 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              required
               onChange={(e) => setName(e.target.value)}
             />
           </div>
@@ -112,6 +113,7 @@ export default function Contact() {
               name="email"
               value={email}
               className="w-full bg-white rounded border border-gray-300 focus:border-blue-300 focus:ring-2 focus:ring-blue-300 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              required
               onChange={(e) => setEmail(e.target.value)}
             />
           </div>
@@ -126,6 +128,7 @@ export default function Contact() {
               name="message"
               value={message}
               className="w-full bg-white rounded border border-gray-300 focus:border-blue-300 focus:ring-2 focus:ring-blue-300 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+              required
               onChange={(e) => setMessage(e.target.value)}
             />
           </div>
